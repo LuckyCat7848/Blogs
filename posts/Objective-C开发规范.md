@@ -1000,7 +1000,7 @@ static NSString * const EHITableViewCellReuseIdentifier = @"TableViewCellReuseId
 
 有很多可以自动生成注释格式的插件，推荐使用 [VVDocumenter](https://github.com/onevcat/VVDocumenter-Xcode)： 
 
-![Alt text](./1.gif)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/VVDocumenter.jpg)
 
 在 `.m` 文件中，这种方式参数多的时候占行数多也太啰嗦，可以用如下良好的方式说明即可：
 
@@ -1042,7 +1042,7 @@ static NSString * const EHITableViewCellReuseIdentifier = @"TableViewCellReuseId
 
 这里拿的是 AFNetworking 框架做的一个说明：
 
-![Alt text](./1495706811587.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/EnterCodingStandards.jpg)
 
 ### 6.2 点符号语法
 
@@ -1269,13 +1269,13 @@ update_xcode_plugins 的安装和使用参考如下：
 
 [FuzzyAutocomplete](https://github.com/chendo/FuzzyAutocompletePlugin) 通过添加模糊匹配来提高 Xcode 代码自动补全功能，开发者无需遵循从头匹配的原则，只要记得方法里某个关键字即可进行匹配，很好地提高了工作效率。  
 
-![Alt text](./1496208938863.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/FuzzyAutocomplete.jpg)
 
 #### 7.2.2  KSImageNamed
 
 [KSImageNamed ](https://github.com/ksuther/KSImageNamed-Xcode)为项目中使用的 UIImage 的 imageNamed: 方法提供文件名自动补全功能。使用 [UIImage imageNamed:@"xxx"] 时，该插件会扫描整个 workspace 中的图片文件，显示图片信息。
 
-![Alt text](./1496208714736.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/KSImageNamed.jpg)
 
 #### 7.2.3 OMColorSense
 
