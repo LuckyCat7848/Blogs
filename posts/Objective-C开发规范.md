@@ -1,4 +1,4 @@
-# iOS开发规范 (For 一嗨租车)
+# Objective-C开发规范
 
 [toc]
 
