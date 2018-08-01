@@ -1000,7 +1000,7 @@ static NSString * const EHITableViewCellReuseIdentifier = @"TableViewCellReuseId
 
 有很多可以自动生成注释格式的插件，推荐使用 [VVDocumenter](https://github.com/onevcat/VVDocumenter-Xcode)： 
 
-![](https://github.com/LuckyCat7848/Blogs/raw/master/source/VVDocumenter.jpg)
+![](https://github.com/LuckyCat7848/Blogs/raw/master/source/VVDocumenter.gif)
 
 在 `.m` 文件中，这种方式参数多的时候占行数多也太啰嗦，可以用如下良好的方式说明即可：
 
