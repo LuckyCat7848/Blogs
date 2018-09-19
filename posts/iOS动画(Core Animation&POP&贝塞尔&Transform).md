@@ -23,7 +23,7 @@
 >**UIView**：`UIKit`框架，用户交互使用。
 **CALayer**：`QuartzCore`框架，不能响应事件，为了内容展示和动画操作。
 
-![Alt text](./1536307853843.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/CALayer.png)
 
 `CALayer`子类：
 
@@ -44,7 +44,7 @@
 
 > **`Core Animation`是 iOS 和 OS X 平台上负责图形渲染与动画的基础框架。**
 
-![Alt text](./34265F35-1B4F-467D-9D5D-413ACE7B4459.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/Core%20Animation.png)
 
 **`CAAnimation`**：核心动画的基础类。不能直接使用，负责动画运行时间、速度的控制，本身实现了`CAMediaTiming`协议。
 
@@ -71,7 +71,7 @@
 
 > **`POP`是一个来自于`Facebook`，在iOS和OS X上通用的极具扩展性的动画引擎。**
 
-![Alt text](./1536214502359.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/Facebook%20POP.png)
 
 **`Engine`、`Utility`、`Webcore`**：微动画流畅性提供支持。
 **`POPPropertyAnimation`**：属性动画。
