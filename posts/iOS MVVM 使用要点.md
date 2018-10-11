@@ -11,14 +11,13 @@
 
 ## 二、MVC
 
-![Alt text](./1539163388086.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/MVC.png)
 
 `MVC` 兼顾 `View` 和 `Model` 的中间处理，还有很多例如网络请求等很多业务逻辑判断，难免不小心就臃肿厚重。
 
 ## 三、 MVVM
 
-![Alt text](./1539163345386.png)
-
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/MVVM.png)
 
 ### 3.1 基本概念和注意事项
 
