@@ -3,7 +3,7 @@
 [toc]
 
 ## 前言
-首先，上面是基本介绍，后面是个人经历的问题及解决方案，虽然写在最后，但是希望你们耐心看，不要犯我经历过的错误。祝你们都能顺利解决所有疑难杂症~
+首先，上面是基本介绍，**`后面是个人经历的问题及解决方案`**，虽然写在最后，但是希望你们耐心看，不要犯我经历过的错误。祝你们都能顺利解决所有疑难杂症~
 
 ## 1. 介绍
 ### 1.1 AES是什么？
@@ -86,6 +86,8 @@ iOS 的`ccNoPadding`对加密字符串解密后 string：@"hello中国\x05\x05\x
 ###2.3 选错填充方式的补救
 
 对此，只能我这边采取措施和 Android 、后台保持一致了。采取的方式很简单，就是在解密后台给的数据的时，截掉多余的填充。在加密传输时，加密后，补充需要填充的数据。这里主要是对 data 的操作。
+
+> **注意：**加解密的步骤(Base64、URL Encode、有的还有字符串替换)不同公司可能不同，要对接好。
 
 ### 2.4 加密方法的实现
 
@@ -189,7 +191,7 @@ implementation NSData (EHIExtension)
     
     if (operation == kCCDecrypt) {
         // 解密:位数多的删除
-        originData = [self deleteData:resultData mode:mode];
+        resultData = [self deleteData:resultData mode:mode];
     }
     
     return resultData;
@@ -247,7 +249,7 @@ NSString+EHIAES.h：
 @interface NSString (EHIAES)
 
 /** AES解密 */
-- (NSDictionary *)aes256Decrypt;
+- (NSString *)aes256Decrypt;
 
 /** AES加密 */
 - (NSString *)aes256Encrypt;
@@ -269,7 +271,7 @@ static NSString * const kAESIv = @""; // 16位
 @implementation NSString (EHIAES)
 
 /** AES解密 */
-- (NSDictionary *)aes256Decrypt {
+- (NSString *)aes256Decrypt {
     // 1.URL Decode
     NSString *urlDecodeStr = [self stringByURLDecode];
     // 2.Base64 Decode
@@ -281,19 +283,7 @@ static NSString * const kAESIv = @""; // 16位
         // 解密失败
         return nil;
     }
-    // 去掉多余的字符串 因为解密有补全机制,所以后面会有多余字符
-    NSRange endRange = [decodeStr rangeOfString:@"}"];
-    if (endRange.location != NSNotFound) {
-        decodeStr = [decodeStr substringToIndex:endRange.location + 1];
-    }
-    // 4.json转字典
-    NSError *error;
-    NSData *jsonData = [decodeStr dataUsingEncoding:NSUTF8StringEncoding];
-    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
-    if (error) {
-        return nil;
-    }
-    return dic;
+    return NSString;
 }
 
 /** AES加密 */
