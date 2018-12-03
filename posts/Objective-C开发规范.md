@@ -1,5 +1,4 @@
-# Objective-C开发规范
-
+# Objective-C开发规范(包括项目目录结构)
 [toc]
 
 ------
@@ -27,41 +26,48 @@
 ## 二、项目目录  	
 
 ```
-|- AppDelegate	// 目录下放的是AppDelegate.h(.m)文件，是整个应用的入口文件，所以单独拿出来
-|- Macro 		// 整个应用会用到的宏定义
-	|- EHIAppMacro.h          // app相关的宏定义
-    |- EHINotificationMacro.h // 通知相关的宏定义
-    |- EHIEventMacro.h        // 统计key的宏定义
-    |- EHIBasicDesignMacro.h  // 适配、颜色
-    |- EHIVenderMacro.h       // 第三方的key
-    |- EHIUtilsMacro.h        // 一些方便使用的宏定义
-|- Features		// 功能模块目录     
-    |- Load     // 主页加载之前的欢迎引导页
-    |- Login
-		|- EHILoginMacro.h // 枚举、提示语、数据存储ID（每个模块都根据需要定义）      
-	    |- 注册
-	    |- 登录
-	    |- 忘记密码
-    |- UserCenter
-	    |- EHIUserCenterMacro.h 
-        |- ViewControllers
-        |- ViewModels
-        |- Models       
-        |- Views 
-        |- 设置
-        |- 我的账户
-        |- 会员
-	    |- 余额
-	    ...
-	...
-|- Tools        // 工具类、Categories
-    |- UIButton // 系统类的Category建一个独立的文件夹
-	    |- UIButton+EdgeInsets
-	    |- UIButton+EHIExtension
+|- AppDelegate	  // 整个应用的入口
+	|- Category   // AppDelegate的扩展：3DTouch、OpenURL、RemoteNotification...
+	|- StartLanch // App启动后业务功能操作,使用类方法进行一些操作
+	|- SDKManager // AppDelegate中需要做的第三方SDK的配置
+		|- EHIVendorSDKDefines.h // SDK的key/appID相关数据定义
+		|- EHIVendorSDKManager   // 多个SDK的配置
+		|- EHIPushManager
 		...
-    |- EHILoading // 各种功能，都以文件夹形式存在 
-    ...
-|- Helpers      // 帮助类。包含网络、数据库、定位等操作类的封装和实现
+|- Defines 		          // 整个应用会用到的定义
+	|- EHIMacro.h         // 必用头文件引入（YYKit.h）
+    |- EHIAppDefines.h    // App信息、UI的宏定义(字体、颜色、适配)
+    |- EHIFunctionDefines // 全局方法或内敛函数定义（EHIWeakSelf/EHIStrongSelf）
+    |- EHIEventDefines    // 统计事件使用的Key
+|- Features		// 功能模块目录     
+    |- Load     // 主页加载之前的引导页
+    |- Login
+    |- UserCenter
+    |- Home
+    |- SelfDriving
+		|- EHISelfDrivingDefines  // 枚举、提示语、数据存储Key、通知（每个模块都根据需要定义）     
+	    |- Step1
+	    |- Step2
+		|- Step3
+	    |- Step4
+		...
+	|- Chauffeur
+    |- OrderCenter
+	...
+|- Tools                // 工具类、Categories
+	|- Foundation
+		|- NSArray      // Categories
+		|- UIButton
+			|- Category // Categories
+			|- UIKit    // UI类的多了个自定义控件文件夹
+	|- UI               // 除了系统类的自定义UI
+		|- UploadPhotosView 
+		...
+	|- SDKManager       // 对第三方SDK的封装（分享、加载图片...）
+	|- Manager          // 非第三方SDK的功能封装
+		|- AuthorityManager
+		...
+|- Helpers              // 帮助类。包含网络、数据库、定位等操作类的封装和实现
 	|- NetWork
 	|- Data
     |- Location
@@ -71,7 +77,7 @@
 	|- GIFImages
 	|- ProjectCer
 	...
-|- Supporting Files // Xcode自带文件夹
+|- Supporting Files    // Xcode自带文件夹
 	|- Images.xcassets // 工程默认图片存放文件夹,可以在该下按不同模块创建文件夹存放对应的图片
 ```
 
