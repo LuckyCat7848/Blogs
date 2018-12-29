@@ -1,5 +1,27 @@
 # iOS AES加密(主要使用CFB模式)
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [前言](#%E5%89%8D%E8%A8%80)
+- [1. 介绍](#1-%E4%BB%8B%E7%BB%8D)
+    - [1.1 AES是什么？](#11-aes%E6%98%AF%E4%BB%80%E4%B9%88)
+    - [1.2  AES详解](#12--aes%E8%AF%A6%E8%A7%A3)
+    - [1.3 实现原理和比较](#13-%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E5%92%8C%E6%AF%94%E8%BE%83)
+    - [1.4 模式和填充选择](#14-%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%A1%AB%E5%85%85%E9%80%89%E6%8B%A9)
+- [2. 经验总结](#2-%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93)
+    - [2.1 加密模式和填充方式的确定](#21-%E5%8A%A0%E5%AF%86%E6%A8%A1%E5%BC%8F%E5%92%8C%E5%A1%AB%E5%85%85%E6%96%B9%E5%BC%8F%E7%9A%84%E7%A1%AE%E5%AE%9A)
+    - [2.2 填充方式的选择](#22-%E5%A1%AB%E5%85%85%E6%96%B9%E5%BC%8F%E7%9A%84%E9%80%89%E6%8B%A9)
+    - [2.3 选错填充方式的补救](#23-%E9%80%89%E9%94%99%E5%A1%AB%E5%85%85%E6%96%B9%E5%BC%8F%E7%9A%84%E8%A1%A5%E6%95%91)
+    - [2.4 代码思路](#24-%E4%BB%A3%E7%A0%81%E6%80%9D%E8%B7%AF)
+    - [2.5 加密方法的实现](#25-%E5%8A%A0%E5%AF%86%E6%96%B9%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0)
+        - [2.5.1 NSData 扩展实现加密解密](#251-nsdata-%E6%89%A9%E5%B1%95%E5%AE%9E%E7%8E%B0%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86)
+        - [2.5.2 NSString 扩展实现使用过程](#252-nsstring-%E6%89%A9%E5%B1%95%E5%AE%9E%E7%8E%B0%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+------
+
 ## 前言
 
 首先，希望大家耐心点，这个加密我也是弄很久才出来的，辛辛苦苦整理的博客，介绍大概概念就进入正题！

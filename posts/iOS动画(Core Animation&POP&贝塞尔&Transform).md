@@ -1,8 +1,23 @@
 # iOS动画(Core Animation&POP&贝塞尔&Transform)
-@(学习iOS)
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-[toc]
+  - [前言](#%E5%89%8D%E8%A8%80)
+  - [一、CALayer 和 Core Animation](#%E4%B8%80calayer-%E5%92%8C-core-animation)
+    - [1.1 CALayer](#11-calayer)
+    - [1.2 Core Animation](#12-core-animation)
+  - [二、Facebook POP](#%E4%BA%8Cfacebook-pop)
+  - [三、Pop和Core Animation区别](#%E4%B8%89pop%E5%92%8Ccore-animation%E5%8C%BA%E5%88%AB)
+    - [3.1 Core Animation的基本原理](#31-core-animation%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86)
+    - [3.2 POP 动画库的基本原理](#32-pop-%E5%8A%A8%E7%94%BB%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86)
+    - [3.3 二者区别](#33-%E4%BA%8C%E8%80%85%E5%8C%BA%E5%88%AB)
+    - [3.4 CADisplayLink](#34-cadisplaylink)
+  - [四、其他](#%E5%9B%9B%E5%85%B6%E4%BB%96)
+    - [4.1 贝塞尔曲线Bezier Path](#41-%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BFbezier-path)
+    - [4.2 CGAffineTransform与CATransform3D](#42-cgaffinetransform%E4%B8%8Ecatransform3d)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 -------------
 

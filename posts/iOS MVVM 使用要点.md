@@ -1,5 +1,21 @@
 # iOS MVVM 使用要点
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+  - [一、前言](#%E4%B8%80%E5%89%8D%E8%A8%80)
+  - [二、MVC](#%E4%BA%8Cmvc)
+  - [三、 MVVM](#%E4%B8%89-mvvm)
+    - [3.1 基本概念和注意事项](#31-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
+    - [3.2 使用要点](#32-%E4%BD%BF%E7%94%A8%E8%A6%81%E7%82%B9)
+    - [3.3 优势](#33-%E4%BC%98%E5%8A%BF)
+    - [3.4 弊端](#34-%E5%BC%8A%E7%AB%AF)
+  - [四、ReactiveCocoa](#%E5%9B%9Breactivecocoa)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+--------
+
 ## 一、前言
 
 网上文章真的很多，在此简单的说一些要点和自己的看法。参考以下这篇文章：

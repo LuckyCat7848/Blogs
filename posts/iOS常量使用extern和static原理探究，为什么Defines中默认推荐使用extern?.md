@@ -1,5 +1,25 @@
 # iOS常量使用extern和static原理探究，为什么Defines中默认推荐使用extern?
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+  - [一、场景需求](#%E4%B8%80%E5%9C%BA%E6%99%AF%E9%9C%80%E6%B1%82)
+  - [二、使用方法](#%E4%BA%8C%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
+    - [2.1 宏定义](#21-%E5%AE%8F%E5%AE%9A%E4%B9%89)
+    - [2.2 static](#22-static)
+    - [2.3 extern](#23-extern)
+  - [三、探究](#%E4%B8%89%E6%8E%A2%E7%A9%B6)
+    - [3.1 举个例子](#31-%E4%B8%BE%E4%B8%AA%E4%BE%8B%E5%AD%90)
+    - [3.2 输出结果](#32-%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C)
+    - [3.3 分析](#33-%E5%88%86%E6%9E%90)
+      - [3.3.1 static 的原理](#331-static-%E7%9A%84%E5%8E%9F%E7%90%86)
+      - [3.3.2 extern 的原理](#332-extern-%E7%9A%84%E5%8E%9F%E7%90%86)
+  - [四、总结](#%E5%9B%9B%E6%80%BB%E7%BB%93)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+--------
+
 ## 一、场景需求
 
 我们在项目架构中，每个模块下都会需要一个相关定义文件。例如：注册、登录、忘记密码为一个`Account`模块，模块下的枚举、宏定义、通知、数据存储 Key 等都放在一个`EHIAccountDefines`文件中。对于宏定义、通知、数据存储 Key 等常量的定义使用我们来讨论一下。
