@@ -5,12 +5,11 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [iOS项目重构总结(AppDelegate、基类、Const)](#ios%E9%A1%B9%E7%9B%AE%E9%87%8D%E6%9E%84%E6%80%BB%E7%BB%93appdelegate%E5%9F%BA%E7%B1%BBconst)
 - [一、背景](#%E4%B8%80%E8%83%8C%E6%99%AF)
 - [二、重构的方法](#%E4%BA%8C%E9%87%8D%E6%9E%84%E7%9A%84%E6%96%B9%E6%B3%95)
-- [2.1 整理所有方法并划分功能块](#21-%E6%95%B4%E7%90%86%E6%89%80%E6%9C%89%E6%96%B9%E6%B3%95%E5%B9%B6%E5%88%92%E5%88%86%E5%8A%9F%E8%83%BD%E5%9D%97)
-- [2.2 思考功能块去处](#22-%E6%80%9D%E8%80%83%E5%8A%9F%E8%83%BD%E5%9D%97%E5%8E%BB%E5%A4%84)
-- [2.3 思考功能块用法](#23-%E6%80%9D%E8%80%83%E5%8A%9F%E8%83%BD%E5%9D%97%E7%94%A8%E6%B3%95)
+    - [2.1 整理所有方法并划分功能块](#21-%E6%95%B4%E7%90%86%E6%89%80%E6%9C%89%E6%96%B9%E6%B3%95%E5%B9%B6%E5%88%92%E5%88%86%E5%8A%9F%E8%83%BD%E5%9D%97)
+    - [2.2 思考功能块去处](#22-%E6%80%9D%E8%80%83%E5%8A%9F%E8%83%BD%E5%9D%97%E5%8E%BB%E5%A4%84)
+    - [2.3 思考功能块用法](#23-%E6%80%9D%E8%80%83%E5%8A%9F%E8%83%BD%E5%9D%97%E7%94%A8%E6%B3%95)
 - [三、AppDelegate](#%E4%B8%89appdelegate)
 - [四、Template](#%E5%9B%9Btemplate)
 - [五、Const](#%E4%BA%94const)
