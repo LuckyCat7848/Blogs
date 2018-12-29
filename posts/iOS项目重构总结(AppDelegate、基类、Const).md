@@ -1,9 +1,7 @@
 # iOS项目重构总结(AppDelegate、基类、Const)
-@(学习iOS)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [一、背景](#%E4%B8%80%E8%83%8C%E6%99%AF)
 - [二、重构的方法](#%E4%BA%8C%E9%87%8D%E6%9E%84%E7%9A%84%E6%96%B9%E6%B3%95)
