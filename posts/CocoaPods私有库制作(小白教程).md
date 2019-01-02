@@ -75,7 +75,7 @@ open ~/.cocoapods/repos/EHILibrarySpecs
 pod lib create EHIHiCarBluetooth
 ```
 
-![Alt text](./1545985237159.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/CocoaPods_cmd.png)
 
 过程中终端会向我们提出一系列问题，大家自行选择即可。
 
@@ -83,11 +83,11 @@ pod lib create EHIHiCarBluetooth
 
 如图，添加文件：
 
-![Alt text](./1546051952778.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/CocoaPods_category.png)
 
 工程目录如下：
 
-![Alt text](./1546052052158.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/CocoaPods_project.png)
 
 在`Example`中写好`Demo`，保证编译运行ok。
 
@@ -170,7 +170,7 @@ git commit -m 'create EHIHiCarBluetooth 0.1.0'
 
 如果你还未创建远程仓库，你需要创建与之对应的远程仓库：
 
-![Alt text](./1546052182189.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/CocoaPods_gitlab.png)
 
 创建之后与本地仓库关联并推送，在终端执行如下命令：
 
