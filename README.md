@@ -13,3 +13,5 @@
 - [iOS常量使用extern和static原理探究，为什么Defines中默认推荐使用extern?](https://github.com/LuckyCat7848/Blogs/blob/master/posts/iOS%E5%B8%B8%E9%87%8F%E4%BD%BF%E7%94%A8extern%E5%92%8Cstatic%E5%8E%9F%E7%90%86%E6%8E%A2%E7%A9%B6%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88Defines%E4%B8%AD%E9%BB%98%E8%AE%A4%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8extern%3F.md)
 
 - [iOS项目重构总结(AppDelegate、基类、Const)](https://github.com/LuckyCat7848/Blogs/blob/master/posts/iOS%E9%A1%B9%E7%9B%AE%E9%87%8D%E6%9E%84%E6%80%BB%E7%BB%93(AppDelegate%E3%80%81%E5%9F%BA%E7%B1%BB%E3%80%81Const).md)
+
+- [CocoaPods私有库制作(小白教程)](https://github.com/LuckyCat7848/Blogs/blob/master/posts/CocoaPods%E7%A7%81%E6%9C%89%E5%BA%93%E5%88%B6%E4%BD%9C(%E5%B0%8F%E7%99%BD%E6%95%99%E7%A8%8B).md)
