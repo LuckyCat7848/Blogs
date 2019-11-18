@@ -10,7 +10,7 @@
 
 [MGJRouter](https://github.com/meili/MGJRouter)的思想是使用的服务在 `+(void)load` 中都先去注册 URL ，用到的时候根据 URL 在已注册的字典中查找对应的实现。
 
-![](https://github.com/LuckyCat7848/Blogs/blob/master/source/MGJRouter.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/MJRouter.png)
 
 缺点：
 1. URL 是注册时写死的；
