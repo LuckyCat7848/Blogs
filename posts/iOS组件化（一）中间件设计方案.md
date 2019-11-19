@@ -1,9 +1,5 @@
 # iOS组件化（一）中间件设计方案
 
-[toc]
-
--------
-
 ### 前言
 
 在组件化分层上，我们已经搭建了[私有库](https://www.jianshu.com/p/f4a8879693e9)，陆续添加封装好的库是一个长期项目。组件间的分离也不是一朝一夕的，所以要先把 APP 整体的组件化方案确定，让这两个长期项目同时进行。（也就是**平时多积累私有库，和利用中间件逐渐使工程模块化。**）
@@ -14,7 +10,7 @@
 
 [MGJRouter](https://github.com/meili/MGJRouter)的思想是使用的服务在 `+(void)load` 中都先去注册 URL ，用到的时候根据 URL 在已注册的字典中查找对应的实现。
 
-![](https://github.com/LuckyCat7848/Blogs/blob/master/source/MGJRouter.png)
+![](https://github.com/LuckyCat7848/Blogs/blob/master/source/MJRouter.png)
 
 缺点：
 1. URL 是注册时写死的；
