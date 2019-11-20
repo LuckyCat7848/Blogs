@@ -62,6 +62,8 @@ int main(int argc, char * argv[]) {
 
 ## 我们
 
+- [项目地址~](https://github.com/LuckyCat7848/LCMediator)
+
 ![](https://github.com/LuckyCat7848/Blogs/blob/master/source/APPDelegateClient.png)
 
 图中，在`.plist`中配置了每个模块独立管理 App 生命周期的类名。
