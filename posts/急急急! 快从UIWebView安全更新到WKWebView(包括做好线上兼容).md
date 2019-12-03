@@ -22,8 +22,6 @@
 “minimum-scale=1.0, maximum-scale=1.0, user-scalable=no”
 ```
 
-参考[链接](https://market.1hai.cn/ActivePageMobile/CommonPage?aid=334)。
-
 ### 2.2 JS调用iOS，传参数
 
 ```  
